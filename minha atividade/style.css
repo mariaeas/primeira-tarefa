@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+header, .form-body {
+    height: 100vh;
+    background: linear-gradient(90deg, rgb(152, 152, 243), rgb(212, 212, 240) 100%);
+    display: flex;
+    align-content: normal;
+    color: white;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+header h1 {
+    font-size: 90px;
+    font-weight: 900;
+}
+
+h1 {
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+header h2 {
+    font-size: 60px;
+    font-weight: 400;
+}
+
+h2 {
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+header .computador {
+    width: 700px;
+    height: 700px;
+}
+
+header .logo {
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    height: 140px;
+}
+
+div {
+    display: block;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+main {
+    display: grid;
+    justify-items: center;
+    gap: 100px;
+    padding: 100px;
+    color: white;
+    background-color: rgb(141, 141, 188);
+}
+
+main h2 {
+    font-size: 37px;
+}
+
+.cards {
+    display: flex;
+    gap: 80px;
+}
+
+.card img {
+    height: 250px;
+    width: 250px;
+    border-radius: 0 50px 0 0;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.card {
+    background-color: white;
+    border-radius: 0 50px 0 50px;
+    width: 250px;
+    padding: 25px;
+    color: rgb(1, 1, 44);
+    text-align: center;
+}
+
+main button:hover {
+    background-color: rgb(31, 31, 95);
+}
+
+main button {
+    border: none;
+    padding: 18px 23px;
+    color: (rgb(57, 57, 127));
+    border-radius: 40px;
+    font-size: 18px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+footer {
+    padding: 25px;
+    font-size: 16px;
+    text-align: center;
+    color: rgb(2, 2, 32);
+    font-weight: 600;
+}
+
+footer {
+    display: block;
+}
+
+@media screen and (max-width:768px) {
+    header {
+        display: grid;
+        padding-top: 80px;
+        justify-items:  center;
+    }
+
+    header h1 {
+        font-size: 50px;
+    }
+    header h2{
+        font-size: 35px;
+    }
+
+    header .computador{
+        width: 350px;
+        height: 350px;
+    }
+
+    .cards{
+        display: grid;
+    }
+
+}
