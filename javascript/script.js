@@ -62,8 +62,35 @@ function nota() {
     let média = Math.ceil((number1 + number2 + number3 + number4) / 4)
     if (média >= 60) {
         alert(`Aprovado com a média ${media}`)
-    } else (média < 60); {
+    } else (media < 60); {
          alert(`Aluno não aprovado com a ${media}`)
 
+}
+}
+
+let students = ["Maria Eduarda", "Maynara", "João Lucas", "João Henrique", "João Vitor"]
+console.log(students[0])
+
+function max() {
+    let index = +prompt("Digite o index que deseja acessar")
+    alert(students[index]);
+}
+
+function acessArray() {
+    let idx = +prompt(`Digite o index do elemento que deseja acessar (de 0 a ${students.length - 1})`)
+    alert(`O elemento do index desejado é "${students[idx]}". O primeiro elemento desse array é "${students[0]}". Esse array tem ${students.length} itens. O último elemento desse array é ${students[students.length - 1]}`);
+}
+
+function helloWorld10() {
+    for (let contador = 0; contador < 10; contador = contador +1) {
+        console.log("Hello, World" + contador);
+    }
+}
+
+function tabuada() {
+    let number = +prompt("Digite um número para a tabuada")
+    for (let contador = 1; contador <= 10; contador = contador + 1) {
+    console.log(`${number} x ${contador} = ${number * contador}`)
+    
 }
 }
