@@ -41,12 +41,13 @@ function adivinhação() {
         if (number2 < numeroSorteado) {
             alert("O número digitado é menor que o escolhido, resposta errada")
 
-        } else if (number2 > numeroSorteado)
+            ++chute
+        } else if (number2 > numeroSorteado) {
             alert("O número digitado é maior que o escolhido, resposta errada")
-
-        else {
+        
+            ++chute
+         } else {
             alert("O número que você digitou, está correto!")
         break
         }
-
-}
+    }
