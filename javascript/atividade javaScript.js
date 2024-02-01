@@ -46,5 +46,7 @@ function adivinhação() {
 
         else {
             alert("O número que você digitou, está correto!")
+        break
         }
+
 }

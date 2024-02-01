@@ -63,9 +63,9 @@ function nota() {
     if (média >= 60) {
         alert(`Aprovado com a média ${media}`)
     } else (media < 60); {
-         alert(`Aluno não aprovado com a ${media}`)
+        alert(`Aluno não aprovado com a ${media}`)
 
-}
+    }
 }
 
 let students = ["Maria Eduarda", "Maynara", "João Lucas", "João Henrique", "João Vitor"]
@@ -82,7 +82,7 @@ function acessArray() {
 }
 
 function helloWorld10() {
-    for (let contador = 0; contador < 10; contador = contador +1) {
+    for (let contador = 0; contador < 10; contador = contador + 1) {
         console.log("Hello, World" + contador);
     }
 }
@@ -90,7 +90,51 @@ function helloWorld10() {
 function tabuada() {
     let number = +prompt("Digite um número para a tabuada")
     for (let contador = 1; contador <= 10; contador = contador + 1) {
-    console.log(`${number} x ${contador} = ${number * contador}`)
-    
+        console.log(`${number} x ${contador} = ${number * contador}`)
+
+    }
 }
+
+function showStudents() {
+    let students = ["Maria", "Maynara", "João"]
+    for (let index = 0; index < students.length; index++) {
+        const element = students[index];
+        console.log(`O estudante ${element} está no index ${index}`);
+    }
+}
+
+let mariaEduarda = {
+    name: "Maria Eduarda",
+    idade: 24,
+    maiorDeIdade: true,
+    hobbies: ["ler", "assistir série/filmes", "comer", "viajar"]
+}
+console.log(mariaEduarda.hobbies[4])
+
+let videos = [
+    {
+        title: "Aprendendo JS",
+        duration: "4:30:00",
+        link: "https://youtube.com.ber/testeJS"
+    },
+    {
+        title: "Estudando HTML",
+        duration: "5:00:00",
+        link: "https://youtube.com.br/HTML"
+    },
+    {
+        title: "Sobre CSS",
+        duration: "3:30:00",
+        link: "https://youtube.com.br/CSS"
+    }
+];
+console.log('videos', videos);
+console.log('videos[1]', videos[1])
+console.log('videos[1], videos.title', videos[1], videos.title)
+
+function showVideos() {
+    for (let index = 0; index < videos.length; index++) {
+        const element = videos[index];
+        console.log(element.title);
+    }
 }
